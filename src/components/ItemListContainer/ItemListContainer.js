@@ -7,17 +7,19 @@ import { productList } from '../Products/products'
 const ItemListContainer = ({greetings}) => {
   const [items, setItems] = useState([]);
 
+  useEffect(() => {
+    setTimeout (() => {
     const data = new Promise((resolve, reject) => {
-        resolve(productList)
+        resolve(prod);
     });
-
     data.then((data) => {
-        setItems(data)
+        setItems(data);
     });
-
-    data.catch((error) => {
-        console.error(error)
+    data.catch((err) => {
+        console.log(err);
     });
+  }, 2000);
+ }, []);
 
   return (
     <div className='ItemListContainer__Span'>
