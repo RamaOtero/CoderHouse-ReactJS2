@@ -60,3 +60,14 @@ export const productList = [{
     info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel consectetur lacus, eget posuere lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et.",
 },
 ];
+
+export const traerProducto = (userID) => {
+    return new Promise((resolve, reject) => {
+        const productoFiltrado = productList.find((produc) => {
+            return produc.id === userID});
+        setTimeout(() => {
+            resolve(productoFiltrado);
+            console.log(productoFiltrado)
+        },);
+    });
+};
