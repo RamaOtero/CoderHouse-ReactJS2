@@ -3,10 +3,10 @@ import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import AboutUs from './views/AboutUs';
-import Contact from './views/Contact';
-import News from './views/News';
-import Cart from './views/Cart';
+import AboutUs from './Views/AboutUs';
+import Contact from './Views/Contact';
+import News from './Views/News';
+import Cart from './Views/Cart';
 
 function App() {
   return (

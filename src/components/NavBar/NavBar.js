@@ -9,9 +9,8 @@ const NavBar = () => {
     <div className='navBar__Back'>
         <div className='navBar'>
             <div className='navBar__LogoList'>
-                <img src={Logo} />
+            <Link to="/"> <img src={Logo} /> </Link>
                 <ul className='navBar__list'>
-                <Link to="/"> <img className='navBar2__logo' src={Logo} alt="Logo" /> </Link>
                     <Link to="/" className='navBar2__list--link'>Home</Link>
                     <Link to="/news" className='navBar2__list--link' >News</Link>
                     <Link to="/aboutUs" className='navBar2__list--link'>About Us</Link>

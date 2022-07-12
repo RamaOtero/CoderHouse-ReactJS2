@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../App.css";
 import ItemList from './ItemList/ItemList.js';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { productList } from '../Products/products'
 
 const ItemListContainer = ({greetings}) => {
