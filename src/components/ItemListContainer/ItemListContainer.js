@@ -10,7 +10,7 @@ const ItemListContainer = ({greetings}) => {
   useEffect(() => {
     setTimeout (() => {
     const data = new Promise((resolve, reject) => {
-        resolve(prod);
+        resolve(productList);
     });
     data.then((data) => {
         setItems(data);
